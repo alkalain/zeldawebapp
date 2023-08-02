@@ -1,19 +1,19 @@
 <script >
 export default{
-props:{
+/* props:{
     showTaoggle:{type:Boolean, default: false},
-},
+}, */
 }
 </script>
 <template>
 <!--
     TODO :
-        - Make the icon glow
+        - correct quest bg transparance
         - make border color transparant and gradient 
          bg-gradient-to-b from-[#00000080] from-53,0.2% to-[rgba(0, 0, 0, 0.185)] to-100%
          bg-gradient-to-b from-[rgba(0,0,0,0.5)] from-53,0.2% to-[rgba(0,0,0,0.18)] to-100% -->
         <div class="
-        bg-linear
+        bg-linear bg-opacity-100
         w-[45%] h-[20%] border-solid  
         rounded-[10px]
         p-1
@@ -22,7 +22,7 @@ props:{
         <div class=" rounded-lg 
             ">
             <div class="
-            grid grid-cols-6 h-full bg-linear
+            grid grid-cols-6 h-full 
             border-white border-[2px] box-border border-spacing-1 
             rounded-lg
             
@@ -57,15 +57,15 @@ props:{
                 
                 <footer class=" col-span-1 flex justify-center items-center pl-[45%]">
                     <slot  name="elipse">
-                        <div class="bg-white mix-blend-overlay rounded-md
+                        <!-- <div class="bg-white mix-blend-overlay rounded-md
                         flex justify-center items-center h-[90%] w-[75%]">
                             <div class="
                             bg-black w-[6px] h-[6px] rounded-[100%]
                             " >
-                        <!-- v-show="showToggle" @click="msg=!msg" -->
                         </div>
-                        </div>
-                    </slot>
+                    </div> -->
+                </slot>
+                <!--  v-show="showToggle" @click="msg=!msg" @click="$emit('toggle')" -->
                 </footer>
             </div>
             </div>
@@ -73,6 +73,7 @@ props:{
 </template>
 <style>
 .bg-linear{
- background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 53.02%, rgba(0, 0, 0, 0.185) 100%);
+ background: linear-gradient(180deg, rgba(17, 17, 17, 0.5) 53.02%, rgba(0, 0, 0, 0.185) 100%);
+
 }
 </style>

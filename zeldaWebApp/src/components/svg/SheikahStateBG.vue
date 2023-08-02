@@ -1,7 +1,7 @@
 <template>
         <svg width="510" height="512" viewBox="0 0 510 512" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <rect opacity="0.5" width="510" height="512" fill="url(#pattern0)"/>
-<g style="mix-blend-mode:color" opacity="0.3">
+<g style="background-color: #0D152D; mix-blend-mode:overlay; " opacity="0.3">
 <rect width="510" height="512" fill="#00FFC2"/>
 </g>
 <defs>
@@ -13,3 +13,9 @@
 </svg>
 
 </template>
+<style>
+/* bg-center bg-fixed bg-contain mix-blend-overlay  h-[400vh] */
+*{
+        mix-blend-mode:overlay;
+}
+</style>
